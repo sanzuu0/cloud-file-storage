@@ -29,7 +29,7 @@ Build a secure, modular, observable file storage platform based on microservices
 
 ### MVP Focus:
 - Security (Authentication, encryption, token management, integrity checks)
-- IAM-lite (public/private), public links
+- IAM-lite access control (user ownership, public/private visibility)
 - Event-driven audit logging (Kafka + services)
 - Metrics and logging (Prometheus, Grafana, Loki)
 - Infrastructure-as-Code and CI pipelines (Docker, Terraform)
@@ -82,6 +82,9 @@ Build a secure, modular, observable file storage platform based on microservices
 - Minimalistic CLI (upload, download)
 - Simple Mock UI (HTML or React)
 - User Activity Log (activity history interface)
+- Postmortem Template (prebuilt structure for writing incident reports)
+
+See [mvp-definition.md](./mvp-definition.md) for a detailed breakdown of all MVP components and service-level responsibilities.
 
 ---
 
@@ -214,3 +217,6 @@ Expose mature microservices as reusable OSS components to maximize reuse, demons
 - **Portable config**: ENV-based configuration for cloud/on-prem
 - **Self-documented**: comes with Swagger, Postman, and deployment examples
 
+---
+
+For service-level details, see [docs/services/](./docs/services/) — each MVP component has its own technical breakdown.
